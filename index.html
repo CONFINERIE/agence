@@ -157,6 +157,62 @@ background: red;
 </style>
 
 
+<style>
+.team {
+  background-color: #f7f7f7;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+     .team-member {
+  margin: 20px;
+  text-align: center;
+  width: 30%;
+}
+
+.team-member img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+.team-member h3 { 
+  font-size: 18px;
+  margin-bottom: 5px;
+}   
+
+
+
+.team-member p {
+  font-size: 14px;
+  color: #666;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .team-grid {
+    flex-direction: column;
+  }
+  .team-member {
+    width: 100%;
+  }
+}
+</style>
+
+
+
+    
 <div class="video-player">
     <video width="100%" controls="controls" >
         <source src="VID.mp4" >
